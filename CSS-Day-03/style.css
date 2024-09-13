@@ -1,0 +1,246 @@
+/* box modeling start */
+
+.boxModel {
+    height: auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 30px;               /* Which means space are working all of inside of this box*/
+    margin: 50px;                /* by this space are taking from all of ouside of this box*/
+    border: 2px solid #4caf50; /*by this a green border are created around this box */
+    background-color: #f0f0f0; /* Full box background color is changed into offwhite*/
+}
+
+.boxModel > div {
+    height: 100px;
+    width: 400px;
+    margin-top: 30px;
+    margin-left:200px;
+    padding: 10px;
+}
+
+.box-1 {
+    font-size: 2rem;
+    background-color: #777aaf50;
+    border: 6px solid black;
+    border-radius: 20px;
+}
+.box-2 {
+    font-size: 2rem;
+    background-color: rgb(157, 192, 180);
+    border: 6px dotted black;
+    border-radius: 20px;
+}
+.box-3 {
+    font-size: 2rem;
+    background-color: burlywood;
+    border: 6px dashed black;
+    border-radius: 20px;
+}
+
+/* box modeling End */
+
+/* display styling start */
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Block Element */
+.block-element {
+    display: block;
+    background-color: #e0f7fa;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+}
+
+/* Inline Elements */
+.inline-container {
+    background-color: #fce4ec;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #d81b60;
+    border-radius: 5px;
+}
+
+.inline-element {
+    display: inline;
+    background-color: #f8bbd0;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 1px solid hsl(336, 78%, 43%);
+    border-radius: 3px;
+}
+
+/* Inline-Block Elements */
+.inline-block {
+    background-color: #fff3e0;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #ff8f00;
+    border-radius: 5px;
+}
+
+.inline-block-element {
+    display: inline-block;
+    width: 150px;
+    background-color: #ffe0b2;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ff6f00;
+    border-radius: 3px;
+    text-align: center;
+}
+/* display styling end */
+
+/* positioning start */
+/* General Styles */
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+.box {
+    background-color: #e0e0e0;
+    border: 2px solid #bbb;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(125, 44, 44, 0.1);
+    border-radius: 8px;
+    position: relative; /* For demonstrating relative positioning */
+}
+
+
+/* Fixed Position */
+.fixed-box {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: #dff0d8;
+    border-color: #3c763d;
+    width: 250px;
+}
+/* Static Position */
+.static-box {
+    position: static;
+    left: 100px;
+    bottom: 500px;
+}
+
+/* Relative Position */
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    background-color: #d9edf7;
+    border-color: #31708f;
+}
+
+/* Absolute Position */
+.absolute-box {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+}
+
+/* positioning end */
+
+/* flex box design start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: 30%;
+}
+
+
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Justify content example */
+    align-items: center; /* Align items example */
+    flex-direction: row;  
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.flex-item {
+    background-color: #133d59;
+    color: white;
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.item1 {
+    flex-grow: 1; /* Flex grow example */
+}
+
+.item2 {
+    flex-shrink: 2; /* Flex shrink example */
+}
+
+.item3 {
+    order: -1; 
+}
+
+/* flex box design end */
+
+a {
+    border: none;
+    background: none;
+    font-size: 2rem; 
+    border: 2px solid  rgb(248, 248, 248);
+    border-radius: 4px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #133d59;
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+
