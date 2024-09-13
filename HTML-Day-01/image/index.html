@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--here use meta tag for author name  and kwywords-->
+    <meta charset="UTF-8">
+    <meta name="description" content="A practice HTML document for Tables, Forms, Multimedia, and Accessibility.">
+    <meta name="keywords" content="HTML, Tables, Forms, Semantic HTML, Accessibility">
+    <meta name="author" content="Mehedi Hasan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML second part</title>
+    
+</head>
+<body>
+  <center>
+    <header>
+        <h1>HTML Practice by me</h1>
+    </header>
+
+    <section> 
+        <h2>Tables</h2>
+        <table  border="1" cellpadding="10" cellspacing="0" height="200px" width="500px">
+            <caption>Info</caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Mehedi Hasan</td>
+                    <td>DSA</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    
+                    <td>OOP</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    
+                    <td>NetWorking</td>
+                    <td>c</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </section>
+
+    <section>
+        <!--This part is a create a form where all box are required for usable data.
+         without value button can not take submit-->
+        <h2>Forms</h2>
+        <form action="/submit" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label for="password" >Password:</label>
+            <input type="password"  name="password" minlength="8" required>
+            <br>
+
+            <label for="age">Age (between 18 and 50):</label>
+            <input type="number"  name="age" min="18" max="50" required>
+            <span></span>
+            <br>
+
+            <label for="gender" >Gender:</label>
+            <select  name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br>
+            <!--There are two type thats i have a create a button one is using input type and another is to use button tag-->
+            <button value="submit">Submit</button>
+            <!-- <input type="submit" value="Submit"> -->
+        </form>
+    </section>
+<!--This  section is make for multimedia where i take two media audio and vedio both with control-->
+    <section>
+        <h2>Multimedia</h2>
+        <video controls>
+            <source src="/Assignment-html-02/image/sample-test.mp4"  type="video/mp4">
+            Your browser does not support the video tag.
+        </video><br>
+        
+        <!--here is the audio part but i can not attach no audio beacuse there is no downloaded audio file in my laptop-->
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Iframes</h2>
+        <iframe src="https://www.youtube.com/embed/_TbtjKWm90M?si=FG_K5vtzc21o-kGC" title="Youtbe" autoplay>Accessible</iframe>
+        <br>
+        Click for:
+        <a href="/Assignment-html-01/index.html" target="_blank">Portfolio first part</a>
+    </section>
+
+    <footer>
+        <p>Created by Mehedi Hasan | © 2024</p>
+    </footer>
+
+</center>
+   
+</body>
+</html>
