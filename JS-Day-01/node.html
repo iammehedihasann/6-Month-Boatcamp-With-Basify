@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting up Environment</title>
+    <link rel="stylesheet" href="style.css">
+   
+       
+</head>
+
+<body>
+
+    <h1>Setting up Environment for Node.js and Browser Console</h1>
+
+    <div class="note">
+        <h2>Node.js Setup</h2>
+        <ol>
+            <li><b>Download Node.js:</b>Go to the official <a href="https://nodejs.org" target="_blank">Node.js</a> and
+                download the latest version suitable for your operating system (Windows, macOS, Linux).</li>
+            <li><b>Run the Installer:</b>Once the download is complete, run the installer file. Follow the installation
+                instructions, leaving the default settings unless you need specific changes.</li>
+            <li><b>Verify Installation:</b>After installation, open your terminal (Command Prompt on Windows, Terminal
+                on macOS or Linux). Type the command:
+                <pre><code>node -v</code></pre> This will display the installed Node.js version, confirming that it is
+                properly set up.
+            </li>
+            <li><b>Verify NPM (Node Package Manager):</b>Along with Node.js, npm (the Node Package Manager) is installed
+                automatically. You can check its version by running:
+                <pre><code>npm -v</code></pre>
+            </li>
+            With these steps, your environment is ready for running JavaScript outside of a browser using Node.js. now i 
+            can now start building and running server-side applications or manage packages using npm.
+        </ol>
+
+        <h2>Using Browser Console</h2>
+        <ol>
+            <li>Open any modern browser (Chrome, Firefox, Edge).</li>
+            <li>Right-click on the page and select "Inspect" or press <code>Ctrl + Shift + I</code> (Windows) or
+                <code>Cmd + Option + I</code> (Mac).</li>
+            <li>Go to the "Console" tab to start writing JavaScript code directly in the browser.</li>
+            <li>For example, you can write:
+                <pre><code>console.log("Hello, World!");</code></pre>
+                and hit <code>Enter</code> to see the output.
+            </li>
+        </ol>
+    </div>
+<br> <br>
+ <div class="note">
+    <h2>1. Variables</h2>
+    <p>Variables are containers for storing data values. Declared using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+    <code>
+let name = "John";  // String<br>
+const age = 30;     // Number<br>
+var isStudent = true;  // Boolean
+    </code>
+    <ul>
+        <li><b>let</b>: Allows variable reassignment.</li>
+        <li><b>const</b>: Constant, cannot be reassigned after its initial assignment.</li>
+        <li><b>var</b>: Old keyword, has function-scoped behavior.</li>
+    </ul>
+
+    <h2>2. Comments</h2>
+    <p>Comments are ignored by JavaScript and used to explain code or prevent execution.</p>
+    <code>
+// This is a single-line comment<br><br>/*<br>This is a multi-line comment<br>Useful for larger explanations.<br>*/
+    </code>
+
+    <h2>3. Data Types</h2>
+    <ul>
+        <li><b>String</b>: Text, enclosed in quotes (<code>"Hello"</code>, <code>'World'</code>).</li>
+        <li><b>Number</b>: Integers or decimals (<code>42</code>, <code>3.14</code>).</li>
+        <li><b>Boolean</b>: <code>true</code> or <code>false</code>.</li>
+        <li><b>Null</b>: Represents the intentional absence of any object value (<code>null</code>).</li>
+        <li><b>Undefined</b>: A variable that has been declared but not assigned a value.</li>
+        <li><b>Object</b>: Collections of key-value pairs (e.g., <code>{ name: "John", age: 30 }</code>).</li>
+        <li><b>Array</b>: Ordered collections of values (e.g., <code>[1, 2, 3, "apple"]</code>).</li>
+    </ul>
+ </div>
+</body>
+
+</html>
