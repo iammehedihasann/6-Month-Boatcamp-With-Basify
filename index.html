@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body >
+     <form action="#" method="post" class=" relative" onsubmit=" return validateForm()" >
+         <div class="max-w-lg mx-auto p-6 bg-sky-200 rounded-lg shadow-md about_form">
+                <h1 class="font-bold text-4xl mb-8 text-center underline text-red-600">Form Validation</h1>
+        
+                <div class="mb-4 mt-5">
+                    <label for="name" class="inline-block text-2xl font-medium text-gray-700 mb-2">Name:</label>
+                    <input type="text" id="f-name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder=" write your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="inline-block text-2xl font-medium text-gray-700 mb-2">Email:</label>
+                    <input type="email" id="e-mail" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder=" write your email">
+                </div>
+                <div class="mb-4">
+                    <label for="name" class="inline-block text-2xl font-medium text-gray-700 mb-2">Password:</label>
+                    <input type="password" id="pass-word" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder=" write your password">
+                </div>
+                <div class="mb-4">
+                    <label for="name" class="inline-block text-2xl font-medium text-gray-700 mb-2">Confirm Password:</label>
+                    <input type="password" id="confirm-pass" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder=" confirm password">
+                </div>
+                <div class="ml-36">
+                    <input type="button" id="myBtn" class="px-10 py-2 bg-blue-500 text-white font-bold rounded-lg cursor-pointer hover:bg-blue-600" value="Submit" onclick="clickMe()">
+                </div>
+         </div>
+     </form>
+     <script src="script.js"></script>
+</body>
+</html>
